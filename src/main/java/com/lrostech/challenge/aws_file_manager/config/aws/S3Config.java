@@ -1,4 +1,4 @@
-package com.lrostech.challenge.aws_file_manager.config;
+package com.lrostech.challenge.aws_file_manager.config.aws;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
