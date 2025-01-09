@@ -1,9 +1,13 @@
 spring:
   application:
     name: aws-file-manager
+
 aws:
   accessKeyId: ${AWS_ACCESS_KEY_ID}
   secretKey: ${AWS_SECRET_KEY}
   region: ${AWS_REGION}
   s3:
     bucket: ${AWS_BUCKET_NAME}
+
+jwt:
+  secretKey: ${JWT_SECRET_KEY}
