@@ -1,4 +1,4 @@
-package com.lrostech.challenge.aws_file_manager.domain.contract;
+package com.lrostech.challenge.aws_file_manager.domain.contract.infra;
 
 import org.springframework.web.multipart.MultipartFile;
 
