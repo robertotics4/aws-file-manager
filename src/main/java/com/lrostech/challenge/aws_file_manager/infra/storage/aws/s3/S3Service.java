@@ -1,7 +1,6 @@
 package com.lrostech.challenge.aws_file_manager.infra.storage.aws.s3;
 
 import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.lrostech.challenge.aws_file_manager.domain.contract.infra.IStorage;
@@ -28,8 +27,7 @@ public class S3Service implements IStorage {
         try {
             String fileName = file.getOriginalFilename();
 
-            amazonS3.putObject(new PutObjectRequest(bucketName, fileName, file.getInputStream(), null)
-                    .withCannedAcl(CannedAccessControlList.PublicRead));
+            amazonS3.putObject(new PutObjectRequest(bucketName, fileName, file.getInputStream(), null));
 
             return true;
         } catch (IOException e) {

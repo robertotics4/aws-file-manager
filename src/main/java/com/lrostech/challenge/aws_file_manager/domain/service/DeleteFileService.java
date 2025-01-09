@@ -11,7 +11,7 @@ public class DeleteFileService implements IDeleteFileService {
     private final IStorage storage;
 
     @Override
-    public void deleteFile(String fileName) {
+    public void execute(String fileName) {
         this.storage.deleteFile(fileName);
     }
 }
